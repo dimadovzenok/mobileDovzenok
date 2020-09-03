@@ -4,9 +4,25 @@
              x:Class="mobileDovzenok.Valgusfoor2">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="btn" 
+                    Text="ВКЛ" 
+                    BackgroundColor="Green" 
+                    BorderColor="Black"
+                    BorderWidth="7"
+                    FontSize="Large"
+                    Clicked="btn_Clicked"
+                    HorizontalOptions="StartAndExpand">
+            </Button>
+            <Button x:Name="btn1" 
+                    Text="ВЫКЛ" 
+                    BackgroundColor="Red" 
+                    BorderColor="Black"
+                    BorderWidth="7"
+                    FontSize="Large"
+                    Clicked="btn1_Clicked"
+                    HorizontalOptions="Start">
+            </Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
