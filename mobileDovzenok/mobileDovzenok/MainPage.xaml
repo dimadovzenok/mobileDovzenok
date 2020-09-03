@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mobileDovzenok.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="40" CornerRadius="50">
+            <Label Text="Tere tere XAMARIN.FROMS!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" RotationX="30" FontAttributes="Bold"/>
+        </Frame>
+        <Label Text="Mobiilirakenduste loomine" FontSize="Title" Padding="60,10,60,10"/>
+        <Label Text="Minu esimene app!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
