@@ -126,7 +126,8 @@ namespace mobileDovzenok
             sisse_valja = true;
         }
         Random rnd = new Random();
-        private async void Sisse_Clicked1(object sender, EventArgs e)
+       
+        private async void Sisse_Clicked(object sender, EventArgs e)
         {
             pun.BackgroundColor = Color.Red;
             pun.BorderColor = Color.WhiteSmoke;
@@ -136,23 +137,9 @@ namespace mobileDovzenok
                 punane.FontSize++;
                 await Task.Run(() => Thread.Sleep(1000));
             }
-        }
-        private async  void Sisse_Clicked(object sender, EventArgs e)
-        {
-            pun.BackgroundColor = Color.Red;
-            pun.BorderColor = Color.WhiteSmoke;
-            sisse_valja = false;
-            for (int i = 0; i < 100; i++)
-            {
-                punane.FontSize++;
-                await Task.Run(() => Thread.Sleep(1000));
-            }
-
-            
             int c = rnd.Next(1, 4);
             if (c == 1)
             {
-
                 pun.BackgroundColor = Color.Red;
                 kol.BackgroundColor = Color.FromRgb(62, 62, 62);
                 roh.BackgroundColor = Color.FromRgb(62, 62, 62);
