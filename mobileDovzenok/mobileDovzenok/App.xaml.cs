@@ -10,7 +10,7 @@ namespace mobileDovzenok
         {
             InitializeComponent();
 
-            MainPage = new Valgusfoor2(); // стартовая страница
+            MainPage = new SliderStepper(); // стартовая страница
         }
 
         protected override void OnStart()
