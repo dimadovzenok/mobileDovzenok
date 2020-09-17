@@ -3,14 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mobileDovzenok.SliderStepper">
     <ContentPage.Content>
-        <StackLayout Padding="12,12,12,12">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Slider x:Name="Slider1" Minimum="0" Maximum="100" Value="15" ValueChanged="Slider1_ValueChanged" HorizontalOptions="FillAndExpand" VerticalOptions="Start" BackgroundColor="Black"></Slider>
-                <Slider x:Name="Slider2" Minimum="0" Maximum="100" Value="15" ValueChanged="Slider2_ValueChanged" HorizontalOptions="FillAndExpand"  VerticalOptions="Start" BackgroundColor="Black"></Slider>
-                <Slider x:Name="Slider3" Minimum="0" Maximum="100" Value="5" ValueChanged="Slider3_ValueChanged" HorizontalOptions="FillAndExpand"  VerticalOptions="Start" BackgroundColor="Black"></Slider>
-
-            </StackLayout>
-            <Editor x:Name="Editor1" Text="SliderStepper" VerticalOptions="FillAndExpand"></Editor>
+        <StackLayout>
+ 
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

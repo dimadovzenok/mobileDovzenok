@@ -22,35 +22,35 @@ namespace mobileDovzenok
             int c=rnd.Next(1, 4);
             if (c == 1)
             {
-                pun.BackgroundColor = Color.FromRgb(255, 0, 0);
-                kol.BackgroundColor = Color.Gray;
-                roh.BackgroundColor = Color.Gray;
+                pun.BackgroundColor = Xamarin.Forms.Color.FromRgb(255, 0, 0);
+                kol.BackgroundColor = Xamarin.Forms.Color.Gray;
+                roh.BackgroundColor = Xamarin.Forms.Color.Gray;
             }
             else if(c==2)
             {
-                pun.BackgroundColor = Color.Gray;
-                kol.BackgroundColor = Color.FromRgb(255, 255, 0);
-                roh.BackgroundColor = Color.Gray;
+                pun.BackgroundColor = Xamarin.Forms.Color.Gray;
+                kol.BackgroundColor = Xamarin.Forms.Color.FromRgb(255, 255, 0);
+                roh.BackgroundColor = Xamarin.Forms.Color.Gray;
             }
             else if (c == 3)
             {
-                pun.BackgroundColor = Color.Gray;
-                kol.BackgroundColor = Color.Gray;
-                roh.BackgroundColor = Color.FromRgb(0, 255, 0);
+                pun.BackgroundColor = Xamarin.Forms.Color.Gray;
+                kol.BackgroundColor = Xamarin.Forms.Color.Gray;
+                roh.BackgroundColor = Xamarin.Forms.Color.FromRgb(0, 255, 0);
             }
             else if (c == 4)
             {
-                pun.BackgroundColor = Color.FromRgb(255, 0, 0);
-                kol.BackgroundColor = Color.FromRgb(255, 255, 0);
-                roh.BackgroundColor = Color.FromRgb(0, 255, 0);
+                pun.BackgroundColor = Xamarin.Forms.Color.FromRgb(255, 0, 0);
+                kol.BackgroundColor = Xamarin.Forms.Color.FromRgb(255, 255, 0);
+                roh.BackgroundColor = Xamarin.Forms.Color.FromRgb(0, 255, 0);
             }
         }
 
         private void btn1_Clicked(object sender, EventArgs e)
         {
-            pun.BackgroundColor = Color.FromRgb(100, 100, 100);
-            kol.BackgroundColor = Color.Gray;
-            roh.BackgroundColor = Color.FromHex("#aaaaa");
+            pun.BackgroundColor = Xamarin.Forms.Color.FromRgb(100, 100, 100);
+            kol.BackgroundColor = Xamarin.Forms.Color.Gray;
+            roh.BackgroundColor = Xamarin.Forms.Color.FromHex("#aaaaa");
         }
     }
 }

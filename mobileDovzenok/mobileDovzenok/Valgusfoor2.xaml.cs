@@ -25,13 +25,13 @@ namespace mobileDovzenok
             punane = new Label()
             {
                 Text = "Punane",
-                TextColor = Color.White,
+                TextColor = Xamarin.Forms.Color.White,
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold
             };
             pun = new Frame()
             {
-                BackgroundColor = Color.Red,
+                BackgroundColor = Xamarin.Forms.Color.Red,
                 Content = punane,
                 CornerRadius = 90,
                 Margin = new Thickness(80, 0, 80, 0),
@@ -39,13 +39,13 @@ namespace mobileDovzenok
             kollane = new Label()
             {
                 Text = "Kollane",
-                TextColor = Color.White,
+                TextColor = Xamarin.Forms.Color.White,
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold
             };
             kol = new Frame()
             {
-                BackgroundColor = Color.Yellow,
+                BackgroundColor = Xamarin.Forms.Color.Yellow,
                 Content = kollane,
                 CornerRadius = 90,
                 Margin = new Thickness(80, 0, 80, 0),
@@ -53,13 +53,13 @@ namespace mobileDovzenok
             roheline = new Label()
             {
                 Text = "Roheline",
-                TextColor = Color.White,
+                TextColor = Xamarin.Forms.Color.White,
                 FontSize = 30,
                 FontAttributes = FontAttributes.Bold
             };
             roh = new Frame()
             {
-                BackgroundColor = Color.Green,
+                BackgroundColor = Xamarin.Forms.Color.Green,
                 Content = roheline,
                 CornerRadius = 90,
                 Margin = new Thickness(80, 0, 80, 0)
@@ -67,7 +67,7 @@ namespace mobileDovzenok
             valja = new Button()
             {
                 Text = "Välja",
-                BackgroundColor = Color.Gray,
+                BackgroundColor = Xamarin.Forms.Color.Gray,
                 Margin = new Thickness(80, 0, 80, 0),
 
 
@@ -75,7 +75,7 @@ namespace mobileDovzenok
             sisse = new Button()
             {
                 Text = "Sisse",
-                BackgroundColor = Color.Gray,
+                BackgroundColor = Xamarin.Forms.Color.Gray,
                 Margin = new Thickness(80, 0, 80, 0),
              
 
@@ -113,24 +113,24 @@ namespace mobileDovzenok
             if (fr == pun) { punane.Text = "Seisa ja oota!";};
             if (fr == kol) { kollane.Text = "Sea end vajuta!";};
             if (fr == roh) { roheline.Text = "Mine!";};
-            if (pun.BackgroundColor == Color.FromRgb(100, 100, 100)) { punane.Text = "Sisse lülitada!";  };
-            if (kol.BackgroundColor == Color.Gray) {  kollane.Text = "Sisse lülitada!";  };
-            if (roh.BackgroundColor == Color.FromHex("#aaaaaa")) {  roheline.Text = "Sisse lülitada!"; };
+            if (pun.BackgroundColor == Xamarin.Forms.Color.FromRgb(100, 100, 100)) { punane.Text = "Sisse lülitada!";  };
+            if (kol.BackgroundColor == Xamarin.Forms.Color.Gray) { kollane.Text = "Sisse lülitada!";  };
+            if (roh.BackgroundColor == Xamarin.Forms.Color.FromHex("#aaaaaa")) { roheline.Text = "Sisse lülitada!"; };
         }
 
         private void Valja_Clicked(object sender, EventArgs e)
         {
-            pun.BackgroundColor = Color.FromRgb(100, 100, 100);
-            kol.BackgroundColor = Color.Gray;
-            roh.BackgroundColor = Color.FromHex("#aaaaaa");
+            pun.BackgroundColor = Xamarin.Forms.Color.FromRgb(100, 100, 100);
+            kol.BackgroundColor = Xamarin.Forms.Color.Gray;
+            roh.BackgroundColor = Xamarin.Forms.Color.FromHex("#aaaaaa");
             sisse_valja = true;
         }
         Random rnd = new Random();
        
         private async void Sisse_Clicked(object sender, EventArgs e)
         {
-            pun.BackgroundColor = Color.Red;
-            pun.BorderColor = Color.WhiteSmoke;
+            pun.BackgroundColor = Xamarin.Forms.Color.Red;
+            pun.BorderColor = Xamarin.Forms.Color.WhiteSmoke;
             sisse_valja = false;
             for (int i = 0; i < 100; i++)
             {
@@ -140,22 +140,22 @@ namespace mobileDovzenok
             int c = rnd.Next(1, 4);
             if (c == 1)
             {
-                pun.BackgroundColor = Color.Red;
-                kol.BackgroundColor = Color.FromRgb(62, 62, 62);
-                roh.BackgroundColor = Color.FromRgb(62, 62, 62);
+                pun.BackgroundColor = Xamarin.Forms.Color.Red;
+                kol.BackgroundColor = Xamarin.Forms.Color.FromRgb(62, 62, 62);
+                roh.BackgroundColor = Xamarin.Forms.Color.FromRgb(62, 62, 62);
 
             }
             else if (c == 2)
             {
-                pun.BackgroundColor = Color.FromRgb(62, 62, 62);
-                kol.BackgroundColor = Color.Yellow;
-                roh.BackgroundColor = Color.FromRgb(62, 62, 62);
+                pun.BackgroundColor = Xamarin.Forms.Color.FromRgb(62, 62, 62);
+                kol.BackgroundColor = Xamarin.Forms.Color.Yellow;
+                roh.BackgroundColor = Xamarin.Forms.Color.FromRgb(62, 62, 62);
             }
             else if (c == 3)
             {
-                pun.BackgroundColor = Color.FromRgb(62, 62, 62);
-                kol.BackgroundColor = Color.FromRgb(62, 62, 62);
-                roh.BackgroundColor = Color.Green;
+                pun.BackgroundColor = Xamarin.Forms.Color.FromRgb(62, 62, 62);
+                kol.BackgroundColor = Xamarin.Forms.Color.FromRgb(62, 62, 62);
+                roh.BackgroundColor = Xamarin.Forms.Color.Green;
             }
         }
     }
